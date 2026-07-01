@@ -1,8 +1,152 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@100..900&display=swap');
-</style>
 
 * {
-    color: red;
     font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+ p {
+    line-height: 1.5;
+    font-size: 16px;
+ }
+
+ li {
+    list-style-type: none;
+ }
+
+.text_purple {
+    color: hsl(201, 85%, 40%);
+}
+
+
+/*  NAVIGANTON BAR */
+
+nav {
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav__link--anchor--primary {
+    background-color: hsl(201, 84%, 41%);
+    padding: 8px 20px;
+    border-radius: 18px;
+    color: white;
+    transition: all 500ms ease;
+}
+
+.nav__link--anchor--primary:hover {
+    background-color: hsl(201, 85%, 40%);
+}
+
+.personal__logo {
+    font-size: 24px;
+    color: hsl(201, 85%, 40%);
+    margin: 0 12px;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* about me */
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    border-radius: 30%;
+    overflow: hidden;
+    max-width: 150px;
+    max-height: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+}
+
+.about-me__picture {
+    width: 100%;
+    transform: scale(1.7);
+    padding: 13px 8px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me__link {
+    text-decoration: none;
+    font-size: 24px;
+    color: hsl(201, 85%, 40%);
+    padding: 0 24px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-me__img {
+    width: 100%;
 }
